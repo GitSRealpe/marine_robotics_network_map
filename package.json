@@ -1,0 +1,17 @@
+{
+  "name": "marine_robotics_network_map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^11.2.0",
+    "three": "^0.174.0",
+    "three-globe": "github:vasturiano/three-globe"
+  }
+}

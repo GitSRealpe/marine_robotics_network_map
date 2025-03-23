@@ -1,0 +1,9 @@
+/* descripcion general del documento; color de fondo, tipo de fuente */
+body {
+	font-family: "Lato", sans-serif;
+	background-color: #A9A9A9;
+	color: black;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+}

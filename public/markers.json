@@ -1,0 +1,22 @@
+{
+    "markers": [
+        {
+            "name": "CIRS-Centre d'Investigacio en Robotica Submarina",
+            "type": "Research Center",
+            "lat": 41.967662037896005,
+            "long": 2.8363417576785377,
+            "city": "Girona",
+            "description": "Underwater robotics",
+            "link": "https://github.com/amineHorseman"
+        },
+        {
+            "name": "CIRTESU",
+            "type": "Research Center",
+            "lat": 39.99450141565572,
+            "long": -0.07408400365127464,
+            "city": "Castellon de la Plana",
+            "description": "Underwater robotics",
+            "link": "https://github.com/amineHorseman"
+        }
+    ]
+}
