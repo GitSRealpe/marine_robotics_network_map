@@ -86,7 +86,7 @@ function hoverOutCb(el) {
 };
 
 // Fetch JSON data
-fetch('/markers.json')  // The URL is relative to the "public" folder
+fetch('markers.json')  // The URL is relative to the "public" folder
     .then(response => response.json())
     .then(data => {
         data.markers.forEach(place => {

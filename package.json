@@ -12,6 +12,7 @@
     "install": "^0.13.0",
     "npm": "^11.2.0",
     "three": "^0.174.0",
-    "three-globe": "github:vasturiano/three-globe"
+    "three-globe": "github:vasturiano/three-globe",
+    "vite": "^6.2.2"
   }
 }
