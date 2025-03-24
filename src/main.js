@@ -1,3 +1,6 @@
+import 'bootstrap/dist/css/bootstrap.min.css';  // Bootstrap CSS
+import 'bootstrap';  // Bootstrap JS (optional, needed for modals, dropdowns, etc.)
+
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
