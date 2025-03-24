@@ -1,22 +1,94 @@
 {
     "markers": [
         {
-            "name": "CIRS-Centre d'Investigacio en Robotica Submarina",
+            "name": "CIRS",
+            "subtitle": "Centre d'Investigacio en Robotica Submarina",
             "type": "Research Center",
+            "affiliation": "Universitat de Girona",
             "lat": 41.967662037896005,
             "long": 2.8363417576785377,
-            "city": "Girona",
-            "description": "Underwater robotics",
-            "link": "https://github.com/amineHorseman"
+            "location": "Spain, Girona",
+            "homepage": "https://cirs.udg.edu/"
         },
         {
             "name": "CIRTESU",
+            "subtitle": "Centro de Investigación en Robótica y TEcnologías SUbacuáticas",
             "type": "Research Center",
+            "affiliation": "Universitat Jaume I",
             "lat": 39.99450141565572,
             "long": -0.07408400365127464,
-            "city": "Castellon de la Plana",
-            "description": "Underwater robotics",
-            "link": "https://github.com/amineHorseman"
+            "location": "Spain, Castellon de la Plana",
+            "homepage": "https://blogs.uji.es/cirtesu/"
+        },
+        {
+            "name": "SRV",
+            "subtitle": "Systems, Robotics & Vision Lab",
+            "type": "Research Center",
+            "affiliation": "Universitat de les Illes Balears",
+            "lat": 39.63715716337192,
+            "long": 2.6448243304867454,
+            "location": "Spain, Palma de Mallorca",
+            "homepage": "https://srv.uib.es/"
+        },
+        {
+            "name": "LSTS",
+            "subtitle": "Laboratório de Sistemas e Tecnologia Subaquática",
+            "type": "Research Center",
+            "affiliation": "Universidade do Porto",
+            "lat": 41.178372599697795,
+            "long": -8.595856078706516,
+            "location": "Portugal, Porto",
+            "homepage": "https://lsts.fe.up.pt/"
+        },
+        {
+            "name": "CRIS",
+            "subtitle": "Centre for Robotics & Intelligent Systems",
+            "type": "Research Center",
+            "affiliation": "University of Limerick",
+            "lat": 52.67363559642072,
+            "long": -8.57243295859456,
+            "location": "Ireland, Limerick",
+            "homepage": "https://cris.ie/"
+        },
+        {
+            "name": "RDML",
+            "subtitle": "Robotic Decision Making Laboratory",
+            "type": "Research Center",
+            "affiliation": "Oregon State University",
+            "lat": 44.561875678952674,
+            "long": -123.28225273772836,
+            "location": "USA, Oregon, Corvallis",
+            "homepage": "https://research.engr.oregonstate.edu/rdml/"
+        },
+        {
+            "name": "WARPLab",
+            "subtitle": "WHOI's Autonomous Robotics and Perception Laboratory",
+            "type": "Research Center",
+            "affiliation": "Woods Hole Oceanographic Institution",
+            "lat": 41.52425588937078,
+            "long": -70.6711646793201,
+            "location": "USA, Corvallis",
+            "homepage": "https://warp.whoi.edu/"
+        },
+        {
+            "name": "MBARI",
+            "subtitle": "Monterrey Bay Aquarium Research Institute",
+            "type": "Research Center",
+            "affiliation": "",
+            "lat": 36.80181460384066,
+            "long": -121.78814167270347,
+            "location": "USA, California, Moss Landing",
+            "homepage": "https://www.mbari.org/#"
+        },
+        {
+            "name": "ISME",
+            "subtitle": "Interuniversity Center of Integrated Systems for the Marine Environment",
+            "type": "Research Center",
+            "affiliation": "",
+            "lat": 44.40335182327484,
+            "long": 8.958402616383538,
+            "location": "Italy, Genova",
+            "homepage": "https://isme.unige.it/"
         }
     ]
 }
