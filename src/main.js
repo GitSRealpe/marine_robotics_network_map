@@ -21,7 +21,7 @@ renderers.forEach((r, idx) => {
 
 // Setup scene
 const scene = new THREE.Scene();
-scene.add(new THREE.AmbientLight(0xcccccc, Math.PI));
+scene.add(new THREE.AmbientLight(0xcccccc, 5));
 const dirlight = new THREE.DirectionalLight(0xffffff, 3)
 dirlight.position.set(1, 1, 1)
 scene.add(dirlight);
@@ -30,7 +30,7 @@ scene.add(dirlight);
 const camera = new THREE.PerspectiveCamera();
 camera.aspect = window.innerWidth / window.innerHeight;
 camera.updateProjectionMatrix();
-camera.position.z = 500;
+camera.position.z = 300;
 
 // Orbit Controls
 const controls = new OrbitControls(camera, renderers[0].domElement);
@@ -55,15 +55,15 @@ function buildGlobe() {
         .htmlElementsData(gData)
         .htmlElement(d => {
             const el = document.createElement('div');
-            el.innerHTML = markerSvg;
+            // el.innerHTML = "<button type='button' class='mb-0'>" + d.name + "</button>" + markerSvg
+            el.innerHTML = "<p class='mb-0' style='color: white'>" + d.name + "</p>" + markerSvg;
+            // el.innerHTML = markerSvg;
             el.style.color = d.color;
             el.style.width = `${d.size}px`;
             el.style.transition = 'opacity 250ms';
             el.style['pointer-events'] = 'auto';
             el.style.cursor = 'pointer';
-            // el.onclick = () => console.info(d);
             el.onclick = () => onclickCb(el, d);
-            // el.onmouseover = () => hoverInCb(el, d);
             el.onmouseleave = () => hoverOutCb(el, d);
             return el;
         })
@@ -96,6 +96,7 @@ function onclickCb(el, d) {
     <div class="card-body">
       <h5 class="card-title">${d.name}</h5>
       <h6 class="card-subtitle mb-2 text-muted">${d.subtitle}</h6>
+      <p>${d.affiliation}</p>
       <div class="text-center">
             <a href="${d.homepage}" class="btn btn-outline-primary" target="_blank">${d.homepage}</a>
         </div>
@@ -104,7 +105,7 @@ function onclickCb(el, d) {
 }
 
 function hoverOutCb(el, d) {
-    el.innerHTML = markerSvg;
+    el.innerHTML = "<p class='mb-0' style='color: white'>" + d.name + "</p>" + markerSvg;
     el.className = "";
     el.style.width = `${d.size}px`;
     el.style.cursor = 'pointer';
@@ -121,6 +122,7 @@ fetch('markers.json')  // The URL is relative to the "public" folder
                 name: place.name,
                 subtitle: place.subtitle,
                 location: place.location,
+                affiliation: place.affiliation,
                 // description: place.description,
                 homepage: place.homepage,
                 size: 25,
