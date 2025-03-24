@@ -59,9 +59,10 @@ function buildGlobe() {
             el.style.transition = 'opacity 250ms';
             el.style['pointer-events'] = 'auto';
             el.style.cursor = 'pointer';
-            el.onclick = () => console.info(d);
-            el.onmouseover = () => hoverInCb(el, d);
-            el.onmouseleave = () => hoverOutCb(el);
+            // el.onclick = () => console.info(d);
+            el.onclick = () => onclickCb(el, d);
+            // el.onmouseover = () => hoverInCb(el, d);
+            el.onmouseleave = () => hoverOutCb(el, d);
             return el;
         })
         .htmlElementVisibilityModifier((el, isVisible) => el.style.opacity = isVisible ? 1 : 0);
@@ -78,14 +79,33 @@ function buildGlobe() {
     // Update pov when camera moves
     Globe.setPointOfView(camera);
     controls.addEventListener('change', () => Globe.setPointOfView(camera));
+
+    // Globe.htmlElementsData().push()
 }
 
-function hoverInCb(el, d) {
-    el.innerHTML = d.name
-};
+function onclickCb(el, d) {
+    // el.style['pointer-events'] = 'none';
+    el.style.cursor = 'auto';
+    el.className = "card z-3"; // Bootstrap card class
+    el.style.width = "18rem"; // Optional: Set width
+    // Set the inner HTML of the card
+    el.innerHTML = `
+    <div class="card-header">${d.location}</div>
+    <div class="card-body">
+      <h5 class="card-title">${d.name}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">${d.subtitle}</h6>
+      <div class="text-center">
+            <a href="${d.homepage}" class="btn btn-outline-primary" target="_blank">${d.homepage}</a>
+        </div>
+    </div>
+  `;
+}
 
-function hoverOutCb(el) {
+function hoverOutCb(el, d) {
     el.innerHTML = markerSvg;
+    el.className = "";
+    el.style.width = `${d.size}px`;
+    el.style.cursor = 'pointer';
 };
 
 // Fetch JSON data
@@ -97,8 +117,12 @@ fetch('markers.json')  // The URL is relative to the "public" folder
                 lat: place.lat,
                 lng: place.long,
                 name: place.name,
+                subtitle: place.subtitle,
+                location: place.location,
+                // description: place.description,
+                homepage: place.homepage,
                 size: 25,
-                color: ['red', 'white', 'blue', 'green'][Math.round(Math.random() * 3)],
+                color: ['red', 'purple', 'blue', 'green'][Math.round(Math.random() * 3)],
 
             })
         });
