@@ -4,7 +4,9 @@ import 'bootstrap';  // Bootstrap JS (optional, needed for modals, dropdowns, et
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
-import ThreeGlobe from 'three-globe';
+// import ThreeGlobe from 'three-globe';
+
+import { buildGlobe } from './myGlobe.js'
 
 // Setup renderers
 const renderers = [new THREE.WebGLRenderer(), new CSS2DRenderer()];
@@ -41,80 +43,11 @@ controls.autoRotateSpeed = 0.1
 controls.minDistance = 130
 controls.maxDistance = 300
 
-const markerSvg = `<svg viewBox="-4 0 36 36">
-      <path fill="currentColor" d="M14,0 C21.732,0 28,5.641 28,12.6 C28,23.963 14,36 14,36 C14,36 0,24.064 0,12.6 C0,5.641 6.268,0 14,0 Z"></path>
-      <circle fill="black" cx="14" cy="14" r="7"></circle>
-    </svg>`;
-const gData = [];
-
-function buildGlobe() {
-    const Globe = new ThreeGlobe()
-        .globeImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg')
-        .bumpImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png')
-        .showGraticules(true)
-        .htmlElementsData(gData)
-        .htmlElement(d => {
-            const el = document.createElement('div');
-            // el.innerHTML = "<button type='button' class='mb-0'>" + d.name + "</button>" + markerSvg
-            el.innerHTML = "<p class='mb-0' style='color: white'>" + d.name + "</p>" + markerSvg;
-            // el.innerHTML = markerSvg;
-            el.style.color = d.color;
-            el.style.width = `${d.size}px`;
-            el.style.transition = 'opacity 250ms';
-            el.style['pointer-events'] = 'auto';
-            el.style.cursor = 'pointer';
-            el.onclick = () => onclickCb(el, d);
-            el.onmouseleave = () => hoverOutCb(el, d);
-            return el;
-        })
-        .htmlElementVisibilityModifier((el, isVisible) => el.style.opacity = isVisible ? 1 : 0);
-
-    // custom globe material
-    const globeMaterial = Globe.globeMaterial();
-    globeMaterial.bumpScale = 10;
-    new THREE.TextureLoader().load('//cdn.jsdelivr.net/npm/three-globe/example/img/earth-water.png', texture => {
-        globeMaterial.specularMap = texture;
-        globeMaterial.specular = new THREE.Color('grey');
-        globeMaterial.shininess = 15;
-    });
-    scene.add(Globe);
-    // Update pov when camera moves
-    Globe.setPointOfView(camera);
-    controls.addEventListener('change', () => Globe.setPointOfView(camera));
-
-    // Globe.htmlElementsData().push()
-}
-
-function onclickCb(el, d) {
-    // el.style['pointer-events'] = 'none';
-    el.style.cursor = 'auto';
-    el.className = "card z-3"; // Bootstrap card class
-    el.style.width = "18rem"; // Optional: Set width
-    // Set the inner HTML of the card
-    el.innerHTML = `
-    <div class="card-header">${d.location}</div>
-    <div class="card-body">
-      <h5 class="card-title">${d.name}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">${d.subtitle}</h6>
-      <p>${d.affiliation}</p>
-      <div class="text-center">
-            <a href="${d.homepage}" class="btn btn-outline-primary" target="_blank">${d.homepage}</a>
-        </div>
-    </div>
-  `;
-}
-
-function hoverOutCb(el, d) {
-    el.innerHTML = "<p class='mb-0' style='color: white'>" + d.name + "</p>" + markerSvg;
-    el.className = "";
-    el.style.width = `${d.size}px`;
-    el.style.cursor = 'pointer';
-};
-
 // Fetch JSON data
 fetch('markers.json')  // The URL is relative to the "public" folder
     .then(response => response.json())
     .then(data => {
+        const gData = [];
         data.markers.forEach(place => {
             gData.push({
                 lat: place.lat,
@@ -130,11 +63,27 @@ fetch('markers.json')  // The URL is relative to the "public" folder
 
             })
         });
-        buildGlobe()
+        let globe = buildGlobe(gData)
+        scene.add(globe)
+        // Update pov when camera moves
+        globe.setPointOfView(camera);
+        controls.addEventListener('change', () => globe.setPointOfView(camera));
+
     })
     .catch(error => {
         console.error('Error loading JSON file:', error);
     });
+
+const texture = new THREE.TextureLoader().load("https://cdn.jsdelivr.net/npm/three-globe/example/img/night-sky.png");
+texture.wrapS = THREE.RepeatWrapping;
+texture.wrapT = THREE.RepeatWrapping;
+texture.repeat.set(1, 1);
+
+const geometry = new THREE.SphereGeometry(500, 32, 16);
+// const material = new THREE.MeshBasicMaterial({ color: 0xffff00, side: THREE.BackSide });
+const material = new THREE.MeshBasicMaterial({ map: texture, side: THREE.BackSide });
+const sphere = new THREE.Mesh(geometry, material);
+scene.add(sphere);
 
 // Kick-off renderers
 (function animate() { // IIFE
