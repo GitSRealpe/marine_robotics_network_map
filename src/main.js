@@ -4,6 +4,7 @@ import 'bootstrap';  // Bootstrap JS (optional, needed for modals, dropdowns, et
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
+import Stats from 'stats.js';
 // import ThreeGlobe from 'three-globe';
 
 import { buildGlobe } from './myGlobe.js'
@@ -23,7 +24,7 @@ renderers.forEach((r, idx) => {
 
 // Setup scene
 const scene = new THREE.Scene();
-scene.add(new THREE.AmbientLight(0xcccccc, 5));
+scene.add(new THREE.AmbientLight(0xcccccc, 3));
 const dirlight = new THREE.DirectionalLight(0xffffff, 3)
 dirlight.position.set(1, 1, 1)
 scene.add(dirlight);
@@ -85,10 +86,16 @@ const material = new THREE.MeshBasicMaterial({ map: texture, side: THREE.BackSid
 const sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
 
+var stats = new Stats();
+stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
+document.body.appendChild(stats.dom);
+
 // Kick-off renderers
 (function animate() { // IIFE
+    stats.begin();
     // Frame cycle
     controls.update();
     renderers.forEach(r => r.render(scene, camera));
     requestAnimationFrame(animate);
+    stats.end();
 })();
