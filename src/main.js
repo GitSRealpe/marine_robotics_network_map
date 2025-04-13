@@ -5,7 +5,11 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { CSS2DRenderer } from 'three/examples/jsm/renderers/CSS2DRenderer.js';
 import Stats from 'stats.js';
+import GUI from 'lil-gui';
 // import ThreeGlobe from 'three-globe';
+
+const gui = new GUI();
+gui.add(document, 'title');
 
 import { buildGlobe } from './myGlobe.js'
 

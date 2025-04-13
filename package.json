@@ -11,7 +11,9 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "install": "^0.13.0",
+    "lil-gui": "^0.20.0",
     "npm": "^11.2.0",
+    "stats.js": "^0.17.0",
     "three": "^0.174.0",
     "three-globe": "github:vasturiano/three-globe",
     "vite": "^6.2.2"
