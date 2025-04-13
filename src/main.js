@@ -64,7 +64,7 @@ fetch('markers.json')  // The URL is relative to the "public" folder
                 // description: place.description,
                 homepage: place.homepage,
                 size: 25,
-                color: ['red', 'purple', 'blue', 'green'][Math.round(Math.random() * 3)],
+                color: ['red', 'purple', 'blue', 'green', 'gold'][Math.round(Math.random() * 4)],
 
             })
         });
@@ -99,6 +99,7 @@ document.body.appendChild(stats.dom);
     stats.begin();
     // Frame cycle
     controls.update();
+    sphere.rotation.y -= 0.0002;
     renderers.forEach(r => r.render(scene, camera));
     requestAnimationFrame(animate);
     stats.end();
