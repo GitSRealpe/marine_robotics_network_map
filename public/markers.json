@@ -89,6 +89,26 @@
             "long": 8.958402616383538,
             "location": "Italy, Genova",
             "homepage": "https://isme.unige.it/"
+        },
+        {
+            "name": "SMaRC",
+            "subtitle": "Swedish Maritime Robotics Centre",
+            "type": "Research Center",
+            "affiliation": "KTH Royal Institute of Technology",
+            "lat": 59.348478364954374,
+            "long": 18.07178306737455,
+            "location": "Sweden, Stockholm",
+            "homepage": "https://smarc.se/"
+        },
+        {
+            "name": "OSL",
+            "subtitle": "Ocean Systems Lab",
+            "type": "Research Center",
+            "affiliation": "Heriot-Watt University",
+            "lat": 55.9127309127273,
+            "long": -3.3248116294022347,
+            "location": "Scotland, Edinburgh",
+            "homepage": "https://oceansystemslab.github.io/"
         }
     ]
 }
