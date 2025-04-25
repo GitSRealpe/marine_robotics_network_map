@@ -4,7 +4,7 @@ Map to connect centers and researchers from the marine robotics field.
 
 Highly inspired on: [ROS Map](https://github.com/DLu/ros_map)
 
-Map at: [https://gitsrealpe.github.io/marine_robotics_network_map/](https://gitsrealpe.github.io/marine_robotics_network_map/)
+Map at: [https://gitsrealpe.github.io/marine_robotics_network_map/](https://gitsrealpe.github.io/marine_robotics_network_map/) 🌎
 
 #### Add your Centre/Isntitute/Company !
 
@@ -30,3 +30,10 @@ To add a new entry in the map:
 
 - Make a pull request to the main repo [marine_robotics_network_map](https://github.com/GitSRealpe/marine_robotics_network_map)
 - Thats it, your pull request will be reviewed as soon as posible!
+
+Thank you 💪 for contributing!
+<p align="center">
+    <a href="https://github.com/GitSRealpe/marine_robotics_network_map/graphs/contributors">
+      <img src="https://contrib.rocks/image?repo=GitSRealpe/marine_robotics_network_map" />
+    </a>
+</p>
