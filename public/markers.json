@@ -109,6 +109,16 @@
             "long": -3.3248116294022347,
             "location": "Scotland, Edinburgh",
             "homepage": "https://oceansystemslab.github.io/"
+        },
+        {
+            "name": "AURLab",
+            "subtitle": "The Applied Underwater Robotics Laboratory",
+            "type": "Research Center",
+            "affiliation": "Norwegian University of Science and Technology",
+            "lat": 63.41958052441233,
+            "long": 10.40205991325055,
+            "location": "Norway, Trondheim",
+            "homepage": "https://www.ntnu.edu/aur-lab/aur-lab"
         }
     ]
 }
