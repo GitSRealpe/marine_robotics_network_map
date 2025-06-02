@@ -119,6 +119,16 @@
             "long": 10.40205991325055,
             "location": "Norway, Trondheim",
             "homepage": "https://www.ntnu.edu/aur-lab/aur-lab"
+        },
+        {
+            "name": "LIAS",
+            "subtitle": "The Laboratory for Intelligent Autonomous Systems",
+            "type": "Research Center",
+            "affiliation": "The Chinese University of Hong Kong, Shenzhen",
+            "lat": 22.687904511724717,
+            "long": 114.20990309988149,
+            "location": "Shenzhen, China",
+            "homepage": "https://lias-cuhksz.github.io/"
         }
     ]
 }
