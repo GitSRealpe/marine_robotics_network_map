@@ -129,6 +129,26 @@
             "long": 114.20990309988149,
             "location": "Shenzhen, China",
             "homepage": "https://lias-cuhksz.github.io/"
+        },
+        {
+            "name": "FRoG",
+            "subtitle": "University of Michigan Field Robotics Group",
+            "type": "Research Center",
+            "affiliation": "University of Michigan",
+            "lat": 42.27731958522059,
+            "long": -83.73825000885712,
+            "location": "USA, Michigan",
+            "homepage": "https://fieldrobotics.engin.umich.edu/"
+        },
+        {
+            "name": "Ocean Robotics @ GSO",
+            "subtitle": "URI Ocean Robotics Group ",
+            "type": "Research Center",
+            "affiliation": "University of Rhode Island",
+            "lat": 41.486246961862264,
+            "long": -71.53068666159982,
+            "location": "USA, Rhode Island",
+            "homepage": "https://web.uri.edu/gso/research/ocean-robotics/"
         }
     ]
 }
