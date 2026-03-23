@@ -149,6 +149,16 @@
             "long": -71.53068666159982,
             "location": "USA, Rhode Island",
             "homepage": "https://web.uri.edu/gso/research/ocean-robotics/"
+        },
+        {
+            "name": "IOES Lab",
+            "subtitle": "Intelligent Ocean Systems Laboratory",
+            "type": "Research Center",
+            "affiliation": "Korea Maritime & Ocean University (KMOU)",
+            "lat": 35.07641928432982,
+            "long": 129.08897170401423,
+            "location": "South Korea, Busan",
+            "homepage": "https://lab.wschoi.com/en"
         }
     ]
 }
