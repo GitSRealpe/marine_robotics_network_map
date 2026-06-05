@@ -1,164 +1,261 @@
 {
-    "markers": [
-        {
-            "name": "CIRS",
-            "subtitle": "Centre d'Investigacio en Robotica Submarina",
-            "type": "Research Center",
-            "affiliation": "Universitat de Girona",
-            "lat": 41.967662037896005,
-            "long": 2.8363417576785377,
-            "location": "Spain, Girona",
-            "homepage": "https://cirs.udg.edu/"
-        },
-        {
-            "name": "CIRTESU",
-            "subtitle": "Centro de Investigación en Robótica y TEcnologías SUbacuáticas",
-            "type": "Research Center",
-            "affiliation": "Universitat Jaume I",
-            "lat": 39.99450141565572,
-            "long": -0.07408400365127464,
-            "location": "Spain, Castellon de la Plana",
-            "homepage": "https://blogs.uji.es/cirtesu/"
-        },
-        {
-            "name": "SRV",
-            "subtitle": "Systems, Robotics & Vision Lab",
-            "type": "Research Center",
-            "affiliation": "Universitat de les Illes Balears",
-            "lat": 39.63715716337192,
-            "long": 2.6448243304867454,
-            "location": "Spain, Palma de Mallorca",
-            "homepage": "https://srv.uib.es/"
-        },
-        {
-            "name": "LSTS",
-            "subtitle": "Laboratório de Sistemas e Tecnologia Subaquática",
-            "type": "Research Center",
-            "affiliation": "Universidade do Porto",
-            "lat": 41.178372599697795,
-            "long": -8.595856078706516,
-            "location": "Portugal, Porto",
-            "homepage": "https://lsts.fe.up.pt/"
-        },
-        {
-            "name": "CRIS",
-            "subtitle": "Centre for Robotics & Intelligent Systems",
-            "type": "Research Center",
-            "affiliation": "University of Limerick",
-            "lat": 52.67363559642072,
-            "long": -8.57243295859456,
-            "location": "Ireland, Limerick",
-            "homepage": "https://cris.ie/"
-        },
-        {
-            "name": "RDML",
-            "subtitle": "Robotic Decision Making Laboratory",
-            "type": "Research Center",
-            "affiliation": "Oregon State University",
-            "lat": 44.561875678952674,
-            "long": -123.28225273772836,
-            "location": "USA, Oregon, Corvallis",
-            "homepage": "https://research.engr.oregonstate.edu/rdml/"
-        },
-        {
-            "name": "WARPLab",
-            "subtitle": "WHOI's Autonomous Robotics and Perception Laboratory",
-            "type": "Research Center",
-            "affiliation": "Woods Hole Oceanographic Institution",
-            "lat": 41.52425588937078,
-            "long": -70.6711646793201,
-            "location": "USA, Massachusetts, Falmouth",
-            "homepage": "https://warp.whoi.edu/"
-        },
-        {
-            "name": "MBARI",
-            "subtitle": "Monterrey Bay Aquarium Research Institute",
-            "type": "Research Center",
-            "affiliation": "",
-            "lat": 36.80181460384066,
-            "long": -121.78814167270347,
-            "location": "USA, California, Moss Landing",
-            "homepage": "https://www.mbari.org/#"
-        },
-        {
-            "name": "ISME",
-            "subtitle": "Interuniversity Center of Integrated Systems for the Marine Environment",
-            "type": "Research Center",
-            "affiliation": "",
-            "lat": 44.40335182327484,
-            "long": 8.958402616383538,
-            "location": "Italy, Genova",
-            "homepage": "https://isme.unige.it/"
-        },
-        {
-            "name": "SMaRC",
-            "subtitle": "Swedish Maritime Robotics Centre",
-            "type": "Research Center",
-            "affiliation": "KTH Royal Institute of Technology",
-            "lat": 59.348478364954374,
-            "long": 18.07178306737455,
-            "location": "Sweden, Stockholm",
-            "homepage": "https://smarc.se/"
-        },
-        {
-            "name": "OSL",
-            "subtitle": "Ocean Systems Lab",
-            "type": "Research Center",
-            "affiliation": "Heriot-Watt University",
-            "lat": 55.9127309127273,
-            "long": -3.3248116294022347,
-            "location": "Scotland, Edinburgh",
-            "homepage": "https://oceansystemslab.github.io/"
-        },
-        {
-            "name": "AURLab",
-            "subtitle": "The Applied Underwater Robotics Laboratory",
-            "type": "Research Center",
-            "affiliation": "Norwegian University of Science and Technology",
-            "lat": 63.41958052441233,
-            "long": 10.40205991325055,
-            "location": "Norway, Trondheim",
-            "homepage": "https://www.ntnu.edu/aur-lab/aur-lab"
-        },
-        {
-            "name": "LIAS",
-            "subtitle": "The Laboratory for Intelligent Autonomous Systems",
-            "type": "Research Center",
-            "affiliation": "The Chinese University of Hong Kong, Shenzhen",
-            "lat": 22.687904511724717,
-            "long": 114.20990309988149,
-            "location": "Shenzhen, China",
-            "homepage": "https://lias-cuhksz.github.io/"
-        },
-        {
-            "name": "FRoG",
-            "subtitle": "University of Michigan Field Robotics Group",
-            "type": "Research Center",
-            "affiliation": "University of Michigan",
-            "lat": 42.27731958522059,
-            "long": -83.73825000885712,
-            "location": "USA, Michigan",
-            "homepage": "https://fieldrobotics.engin.umich.edu/"
-        },
-        {
-            "name": "Ocean Robotics @ GSO",
-            "subtitle": "URI Ocean Robotics Group ",
-            "type": "Research Center",
-            "affiliation": "University of Rhode Island",
-            "lat": 41.486246961862264,
-            "long": -71.53068666159982,
-            "location": "USA, Rhode Island",
-            "homepage": "https://web.uri.edu/gso/research/ocean-robotics/"
-        },
-        {
-            "name": "IOES Lab",
-            "subtitle": "Intelligent Ocean Systems Laboratory",
-            "type": "Research Center",
-            "affiliation": "Korea Maritime & Ocean University (KMOU)",
-            "lat": 35.07641928432982,
-            "long": 129.08897170401423,
-            "location": "South Korea, Busan",
-            "homepage": "https://lab.wschoi.com/en"
-        }
-    ]
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 2.8363417576785377, 41.967662037896005 ]
+			},
+			"properties": {
+				"name": "CIRS",
+				"subtitle": "Centre d'Investigacio en Robotica Submarina",
+				"type": "Research Center",
+				"affiliation": "Universitat de Girona",
+				"location": "Spain, Girona",
+				"homepage": "https://cirs.udg.edu/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -0.07408400365127464, 39.99450141565572 ]
+			},
+			"properties": {
+				"name": "CIRTESU",
+				"subtitle": "Centro de Investigación en Robótica y TEcnologías SUbacuáticas",
+				"type": "Research Center",
+				"affiliation": "Universitat Jaume I",
+				"location": "Spain, Castellon de la Plana",
+				"homepage": "https://blogs.uji.es/cirtesu/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 2.6448243304867454, 39.63715716337192 ]
+			},
+			"properties": {
+				"name": "SRV",
+				"subtitle": "Systems, Robotics & Vision Lab",
+				"type": "Research Center",
+				"affiliation": "Universitat de les Illes Balears",
+				"location": "Spain, Palma de Mallorca",
+				"homepage": "https://srv.uib.es/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -8.595856078706516, 41.178372599697795 ]
+			},
+			"properties": {
+				"name": "LSTS",
+				"subtitle": "Laboratório de Sistemas e Tecnologia Subaquática",
+				"type": "Research Center",
+				"affiliation": "Universidade do Porto",
+				"location": "Portugal, Porto",
+				"homepage": "https://lsts.fe.up.pt/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -8.57243295859456, 52.67363559642072 ]
+			},
+			"properties": {
+				"name": "CRIS",
+				"subtitle": "Centre for Robotics & Intelligent Systems",
+				"type": "Research Center",
+				"affiliation": "University of Limerick",
+				"location": "Ireland, Limerick",
+				"homepage": "https://cris.ie/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -123.28225273772836, 44.561875678952674 ]
+			},
+			"properties": {
+				"name": "RDML",
+				"subtitle": "Robotic Decision Making Laboratory",
+				"type": "Research Center",
+				"affiliation": "Oregon State University",
+				"location": "USA, Oregon, Corvallis",
+				"homepage": "https://research.engr.oregonstate.edu/rdml/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -70.6711646793201, 41.52425588937078 ]
+			},
+			"properties": {
+				"name": "WARPLab",
+				"subtitle": "WHOI's Autonomous Robotics and Perception Laboratory",
+				"type": "Research Center",
+				"affiliation": "Woods Hole Oceanographic Institution",
+				"location": "USA, Massachusetts, Falmouth",
+				"homepage": "https://warp.whoi.edu/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -121.78814167270347, 36.80181460384066 ]
+			},
+			"properties": {
+				"name": "MBARI",
+				"subtitle": "Monterrey Bay Aquarium Research Institute",
+				"type": "Research Center",
+				"affiliation": "",
+				"location": "USA, California, Moss Landing",
+				"homepage": "https://www.mbari.org/#",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 8.958402616383538, 44.40335182327484 ]
+			},
+			"properties": {
+				"name": "ISME",
+				"subtitle": "Interuniversity Center of Integrated Systems for the Marine Environment",
+				"type": "Research Center",
+				"affiliation": "",
+				"location": "Italy, Genova",
+				"homepage": "https://isme.unige.it/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 18.07178306737455, 59.348478364954374 ]
+			},
+			"properties": {
+				"name": "SMaRC",
+				"subtitle": "Swedish Maritime Robotics Centre",
+				"type": "Research Center",
+				"affiliation": "KTH Royal Institute of Technology",
+				"location": "Sweden, Stockholm",
+				"homepage": "https://smarc.se/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -3.3248116294022347, 55.9127309127273 ]
+			},
+			"properties": {
+				"name": "OSL",
+				"subtitle": "Ocean Systems Lab",
+				"type": "Research Center",
+				"affiliation": "Heriot-Watt University",
+				"location": "Scotland, Edinburgh",
+				"homepage": "https://oceansystemslab.github.io/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 10.40205991325055, 63.41958052441233 ]
+			},
+			"properties": {
+				"name": "AURLab",
+				"subtitle": "The Applied Underwater Robotics Laboratory",
+				"type": "Research Center",
+				"affiliation": "Norwegian University of Science and Technology",
+				"location": "Norway, Trondheim",
+				"homepage": "https://www.ntnu.edu/aur-lab/aur-lab",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 114.20990309988149, 22.687904511724717 ]
+			},
+			"properties": {
+				"name": "LIAS",
+				"subtitle": "The Laboratory for Intelligent Autonomous Systems",
+				"type": "Research Center",
+				"affiliation": "The Chinese University of Hong Kong, Shenzhen",
+				"location": "Shenzhen, China",
+				"homepage": "https://lias-cuhksz.github.io/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -83.73825000885712, 42.27731958522059 ]
+			},
+			"properties": {
+				"name": "FRoG",
+				"subtitle": "University of Michigan Field Robotics Group",
+				"type": "Research Center",
+				"affiliation": "University of Michigan",
+				"location": "USA, Michigan",
+				"homepage": "https://fieldrobotics.engin.umich.edu/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ -71.53068666159982, 41.486246961862264 ]
+			},
+			"properties": {
+				"name": "Ocean Robotics @ GSO",
+				"subtitle": "URI Ocean Robotics Group ",
+				"type": "Research Center",
+				"affiliation": "University of Rhode Island",
+				"location": "USA, Rhode Island",
+				"homepage": "https://web.uri.edu/gso/research/ocean-robotics/",
+				"icon": "marker"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 129.08897170401423, 35.07641928432982 ]
+			},
+			"properties": {
+				"name": "IOES Lab",
+				"subtitle": "Intelligent Ocean Systems Laboratory",
+				"type": "Research Center",
+				"affiliation": "Korea Maritime & Ocean University (KMOU)",
+				"location": "South Korea, Busan",
+				"homepage": "https://lab.wschoi.com/en",
+				"icon": "marker"
+			}
+		}
+	]
 }
