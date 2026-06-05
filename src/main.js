@@ -8,8 +8,8 @@ const map = new maplibregl.Map({
 	style: 'map_style.json', // reliable free style
 	center: [2.8363417576785377, 41.967662037896005],
 	zoom: 3,
-	minZoom: 3,
-	maxZoom: 10,
+	// minZoom: 3,
+	maxZoom: 18,
 });
 
 map.on('style.load', () => {
