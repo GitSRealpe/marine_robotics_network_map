@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -12,10 +12,10 @@
     "bootstrap": "^5.3.3",
     "install": "^0.13.0",
     "lil-gui": "^0.20.0",
+    "maplibre-gl": "^5.24.0",
     "npm": "^11.2.0",
     "stats.js": "^0.17.0",
     "three": "^0.174.0",
-    "three-globe": "github:vasturiano/three-globe",
     "vite": "^6.2.2"
   }
 }
