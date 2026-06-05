@@ -1,11 +1,15 @@
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
+import { renderSky } from './skybox.js'
+
 const map = new maplibregl.Map({
 	container: 'map',
 	style: 'map_style.json', // reliable free style
 	center: [2.8363417576785377, 41.967662037896005],
-	zoom: 3
+	zoom: 3,
+	minZoom: 3,
+	maxZoom: 10,
 });
 
 map.on('style.load', () => {
@@ -82,35 +86,8 @@ map.on('load', async () => {
 			.addTo(map);
 	});
 
-
+	renderSky(map);
 });
-
-// for designing cards
-// let properties = { location: "Girona, Spain", name: "CIRS", subtitle: "Centre d'Investigacio en Robotica Submarina", affiliation: "Universitat de Girona", homepage: "https://cirs.udg.edu/" }
-
-// let div = document.createElement('div');
-// div.innerHTML = `<div class="bg-white border border-gray-800 rounded-xl overflow-hidden">
-// 	<div class="px-0 py-0 border-b border-gray-200 flex items-center justify-between">
-// 		<div class="flex items-center gap-3">
-// 			<div>
-// 				<h3 class="px-4 py-2 bg-gray-300 border-b border-gray-200 text-sm font-bold text-gray-500">${properties.location}</h3>
-// 				<div class="px-4 py-3">
-// 					<h3 class="text-2xl font-bold text-shadow-lg/30 text-sky-800">${properties.name}</h3>
-// 					<h6 class="text-lg text-gray-700">${properties.subtitle}</h6>
-// 					<p class="text-base text-gray-500">${properties.affiliation}</p>
-// 				</div>
-// 			</div>
-// 		</div>
-// 		</div>
-// 		<div class="px-5 pb-2 pt-0 flex justify-center">
-// 			<a href="${properties.homepage}" class="text-sm px-3 py-1 rounded-lg border border-blue-400 text-gray-500 hover:bg-gray-300">${properties.homepage}</a>
-// 		</div>
-// 		</div > `;
-
-// new maplibregl.Popup()
-// 	.setDOMContent(div)
-// 	.setLngLat([-0.07408400365127464, 39.99450141565572])
-// 	.addTo(map);
 
 // Change the cursor to a pointer when the mouse is over the places layer.
 map.on('mouseenter', 'places', () => {
