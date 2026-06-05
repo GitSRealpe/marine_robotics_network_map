@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* descripcion general del documento; color de fondo, tipo de fuente */
 body {
 	font-family: "Lato", sans-serif;
@@ -6,4 +8,14 @@ body {
 	margin-bottom: 0px;
 	margin-left: 0px;
 	margin-top: 0px;
+}
+
+.maplibregl-popup .maplibregl-popup-content {
+	padding: 0px;
+	background: none;
+}
+
+.maplibregl-popup .maplibregl-popup-close-button {
+	padding-right: 10px;
+	padding-top: 4px;
 }

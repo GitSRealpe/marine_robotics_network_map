@@ -1,17 +1,20 @@
 <!doctype html>
-<html>
+<html class="h-full w-full">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Marine Robotics Network Map</title> <!-- titulo del sitio -->
-	<link href="src/stilos.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Marine Robotics Network Map</title>
 	<link href="https://unpkg.com/maplibre-gl@^5.24.0/dist/maplibre-gl.css" rel="stylesheet" />
+	<link href="src/stilos.css" rel="stylesheet" type="text/css">
+	<script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-	<div id="map" style="height: 800px;"></div>
+<body class="h-full w-full flex overflow-hidden">
+	<div id="map" class="flex-1"></div>
+	<!-- <aside class="w-80 bg-gray-100 overflow-y-auto shrink-0 p-4">
+		Sidebar content
+	</aside> -->
 </body>
-
 <script type="module" src="src/main.js"></script>
 
 </html>

@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
     base: '/marine_robotics_network_map/', // Important for GitHub Pages to load assets correctly
@@ -10,4 +11,7 @@ export default defineConfig({
         port: 3000,
         open: false, // Automatically open browser
     },
+    plugins: [
+        tailwindcss(),
+    ],
 });
