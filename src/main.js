@@ -20,10 +20,6 @@ map.on('style.load', () => {
 
 
 map.on('load', async () => {
-	const image = await map.loadImage('https://maplibre.org/maplibre-gl-js/docs/assets/custom_marker.png');
-	// Add an image to use as a custom marker
-	map.addImage('custom-marker', image.data);
-
 	// add marker list
 	map.addSource('places', { type: 'geojson', data: 'markers.json' });
 

@@ -13,7 +13,7 @@
 		},
 		"natural_earth_shaded_relief": {
 			"maxzoom": 6,
-			"tileSize": 256,
+			"tileSize": 512,
 			"tiles": [
 				"https://klokantech.github.io/naturalearthtiles/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"
 			],
@@ -21,7 +21,7 @@
 		}
 	},
 	"sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
-	"glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+	"glyphs": "https://tiles.openstreetmap.us/fonts/{fontstack}/{range}.pbf",
 	"layers": [
 		{
 			"id": "background",
