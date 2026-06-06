@@ -43,11 +43,25 @@ map.on('load', async () => {
 		},
 	});
 
+	const source = map.getSource('places');
+	const data = await source.getData();
+	let table = document.getElementById("table");
+	data.features.forEach(f => {
+		// console.log(f.geometry.coordinates); // [lng, lat]
+		let row = table.insertRow();
+		row.className = "hover:bg-gray-700";
+		let name = row.insertCell(0);
+		name.className = "border border-gray-300 text-gray-100 text-center";
+		name.innerHTML = f.properties.name;
+		let fname = row.insertCell(1);
+		fname.className = "border border-gray-300 text-gray-100";
+		fname.innerHTML = f.properties.subtitle;
+	});
+
 	// When a click event occurs on a feature in the places layer, open a popup at the
 	// location of the feature, with description HTML from its properties.
 	map.on('click', 'places', (e) => {
 		const coordinates = e.features[0].geometry.coordinates.slice();
-		const description = e.features[0].properties.description;
 		const properties = e.features[0].properties;
 
 		// Ensure that if the map is zoomed out such that multiple

@@ -7,7 +7,7 @@ starCanvas.style.top = '0';
 starCanvas.style.left = '0';
 starCanvas.style.width = '100%';
 starCanvas.style.height = '100%';
-starCanvas.style.zIndex = '0'; // behind map
+starCanvas.style.zIndex = '-1'; // behind map
 document.getElementById('map').parentElement.insertBefore(starCanvas, document.getElementById('map'));
 
 document.getElementById('map').style.background = 'transparent';
